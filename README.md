@@ -27,3 +27,6 @@ or to compile the code and then run the resultant executable all in one command
 ```
 cargo run
 ```
+
+## guessing game
+simple game described https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
