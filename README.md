@@ -30,3 +30,6 @@ cargo run
 
 ## guessing game
 simple game described https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
+
+## ownership_references_borrowing
+Interesting vanilla Rust point of existence in few exaples -> ownership in a scope, borrowing

@@ -14,6 +14,7 @@ fn main() {
             .read_line(&mut input)
             .expect("Failed to read input");
 
+        // let input: u32 = input.trim().parse().expect("error parsing");
         let input: u32 = match input.trim().parse() {
             Ok(num) => {num},
             Err(_) => {
