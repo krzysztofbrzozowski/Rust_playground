@@ -41,3 +41,10 @@ Continue of ownership_references_borrowing but in real life example, how borrowi
 ```
 The concepts of ownership, borrowing, and slices ensure memory safety in Rust programs at compile time. The Rust language gives you control over your memory usage in the same way as other systems programming languages, but having the owner of data automatically clean up that data when the owner goes out of scope means you don’t have to write and debug extra code to get this control.
 ```
+
+## structs
+Basic implementation and example how strcts implementation looks like.
+Inside you can also see example of
+```
+#[derive(Debug)]
+```
