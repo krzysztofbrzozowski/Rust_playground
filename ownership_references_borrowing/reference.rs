@@ -19,7 +19,7 @@ fn mutable_reference_error() {
 
     let r1 = &s; // no problem
     let r2 = &s; // no problem
-    // let r3 = &mut s; // BIG PROBLEM
+    // let r3 = &mut s; // BIG PROBLEM (see the slice_type example to see that in function)
     // We can not have regular reference and mutable one to the same value
     // Users of an immutable reference don’t expect the value to suddenly change out from under them!
 
