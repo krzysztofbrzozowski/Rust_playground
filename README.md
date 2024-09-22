@@ -1,4 +1,5 @@
 # Playground for RUST language
+A lot of exapmples are inpired by Rust book -> https://doc.rust-lang.org/book
 
 ## hello dir
 hello world for manually created
