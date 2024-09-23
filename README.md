@@ -48,3 +48,13 @@ Inside you can also see example of
 ```
 #[derive(Debug)]
 ```
+
+## basic_method_impl
+Intro to OOP, basic implementation of methods in Rust
+
+## enums_and_pattern_matching
+- enum.rs => basic usage of enums in Rust
+- enum_option.rs => Polular Rust pattern to cover Null vallue
+- enum_match.rs => enum + matching (arm pattern)
+- enum_match_pattern.rs => enum + matching + additional pattern find in another enum
+- match_pattern_other_or_ => enum + matching all other values out of defined pattern
