@@ -59,3 +59,19 @@ Intro to OOP, basic implementation of methods in Rust
 - enum_match_pattern.rs => enum + matching + additional pattern find in another enum
 - match_pattern_other_or_ => enum + matching all other values out of defined pattern
 - if_let.rs => if let as syntax sugar for a match that runs code when the value matches one pattern and then ignores all other values
+
+## 09_packages_crates_and_modules
+### backyard
+Example implementation of external modules, structure looks like
+
+```
+backyard
+├── Cargo.lock
+├── Cargo.toml
+└── src
+    ├── garden
+    │   └── vegetables.rs
+    ├── garden.rs
+    └── main.rs
+```
+
