@@ -58,3 +58,4 @@ Intro to OOP, basic implementation of methods in Rust
 - enum_match.rs => enum + matching (arm pattern)
 - enum_match_pattern.rs => enum + matching + additional pattern find in another enum
 - match_pattern_other_or_ => enum + matching all other values out of defined pattern
+- if_let.rs => if let as syntax sugar for a match that runs code when the value matches one pattern and then ignores all other values
