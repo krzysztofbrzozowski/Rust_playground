@@ -62,7 +62,7 @@ Intro to OOP, basic implementation of methods in Rust
 
 ## 09_packages_crates_and_modules
 ### backyard
-Example implementation of external modules, structure looks like
+Example implementation of external modules within one crate, binary one, structure looks like
 
 ```
 backyard
