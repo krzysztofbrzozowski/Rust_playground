@@ -108,7 +108,8 @@ Build with
 ```
 cargo build
 ```
-
+### restaurant_sepatate_mod_files
+Only simple implementation how to split one module to subfolder
 
 
 
