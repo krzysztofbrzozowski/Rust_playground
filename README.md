@@ -115,4 +115,7 @@ Only simple implementation how to split one module to subfolder
 ### vectors
 Some intro to vectors
 
+### vectors
+Some strings intro
+
 
