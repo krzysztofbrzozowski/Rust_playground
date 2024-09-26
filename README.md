@@ -118,4 +118,8 @@ Some intro to vectors
 ### vectors
 Some strings intro
 
+### HashMaps
+Very interesting way how to iterate over key value 'lists'
 
+## xyz_rustlings
+Exercises to do -> https://github.com/rust-lang/rustlings
