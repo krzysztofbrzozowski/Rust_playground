@@ -31,6 +31,7 @@ fn main() {
         *num += 1;
     }
     println!("Map is {map:#?}");
+    // TODO - do not understand, copied that from stack
     let max_val = map.iter().max_by_key(|entry | entry.1).unwrap();
     println!("Max occurance has {} -> {}", max_val.0, max_val.1);
 }
