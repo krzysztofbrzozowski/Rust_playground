@@ -108,3 +108,16 @@ fn pig_latin_2(word: &str) -> String {
         format!("{}-{}ay", &remaining, first_letter)
     }
 }
+
+fn pig_latin_3(word: &str) -> String {
+    let mut letters = word.chars();
+    let first_letter = letters.next().unwrap();
+
+    let lowercase_first_letter = first_letter.to_lowercase().next().unwrap();
+
+    match lowercase_first_letter {
+        'a' | 'e' | 'i' | 'o' | 'u' => format!("{}-hay", word),
+        _ => format!("{}-{}ay", letters.as_str(), lowercase_first_letter),
+    }
+
+}
