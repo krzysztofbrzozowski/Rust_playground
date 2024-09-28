@@ -15,6 +15,20 @@ fn main() {
     // 2. Mode
     let mode = mode(&list);
     println!("Max occurance has {mode:#?}");
+
+    // Convert strings to pig latin. The first consonant of each word is moved to the end of the word and ay is added,
+    // so first becomes irst-fay. 
+    // Words that start with a vowel have hay added to the end instead (apple becomes apple-hay). 
+    // Keep in mind the details about UTF-8 encoding!
+
+    // 3. Pig latin
+    // Word 'bas' will be -> as-bay 
+    // Word 'elo' will be -> lo-hay
+    let word = String::from("blo");
+    let pig_latin_word = pig_latin(&word);
+    println!("Pig latin for word '{word}' is '{pig_latin_word}'");
+
+
 }
 
 fn median(list: &Vec<i32>) -> Option<i32> {
@@ -57,4 +71,40 @@ fn mode(list: &Vec<i32>) -> Option<i32> {
     let max_val = map.iter().max_by_key(|entry | entry.1).unwrap();
 
     Some(**max_val.0)
+}
+
+fn pig_latin(some_word: &str) -> String {
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    let mut postfix = String::from("ay");
+    let mut return_word = String::from("");
+
+    let letters: Vec<char> = some_word.chars().collect();
+
+    for (idx, c) in letters.iter().enumerate() {
+        if idx == 0 && vowels.iter().any(|&v| *c == v) {
+            postfix = format!("-h{}", postfix);
+            continue;
+        }
+        else if idx == 0 {
+            postfix = format!("-{}{}", *c, postfix);
+            continue;
+        }
+        return_word.push(*c);
+    }
+    return_word.push_str(&postfix);
+    return_word
+}
+
+// Smarter solution for pig latin
+fn pig_latin_2(word: &str) -> String {
+    let vowels = vec!['a', 'e', 'i', 'o', 'u'];
+    let mut char_iter = word.chars();
+    let first_letter = char_iter.next().unwrap();
+
+    if vowels.contains(&first_letter) {
+        format!("{}-hay", &word)
+    } else {
+        let remaining: String = char_iter.take(word.len() - 1).collect();
+        format!("{}-{}ay", &remaining, first_letter)
+    }
 }
