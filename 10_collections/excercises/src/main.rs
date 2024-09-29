@@ -2,6 +2,8 @@ mod median_mode;
 mod pig_latin;
 mod hashmap_interface;
 
+use crate::hashmap_interface::HashmapInterface;
+
 fn main() {
     // Given a list of integers, use a vector and return 
     // the median (when sorted, the value in the middle position) 
@@ -36,7 +38,13 @@ fn main() {
     // for example, “Add Sally to Engineering” or “Add Amir to Sales.” 
     // Then let the user retrieve a list of all people in a department 
     // or all people in the company by department, sorted alphabetically.
-    let command = hashmap_interface::read_user_input();
+    let mut interface = HashmapInterface::new();
+
+    loop {
+        interface.read_user_input();
+        interface.parse_command();
+        interface.print_company();
+    }
 }
 
 
