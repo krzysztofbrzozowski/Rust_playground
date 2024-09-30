@@ -118,8 +118,40 @@ Some intro to vectors
 ### vectors
 Some strings intro
 
-### HashMaps
+### hashmaps
 Very interesting way how to iterate over key value 'lists'
+
+### excercises
+My implementation of some excercises from https://doc.rust-lang.org/book/ch08-03-hash-maps.html#siphash
+
+## 11_error_handling
+### error_handling
+Example of becktrace when panic occured 
+```
+[profile.release]
+panic = 'abort'
+
+...
+
+fn main() {
+    panic!("crash and burn");
+}
+```
+
+```
+crash and burn
+stack backtrace:
+   0: rust_begin_unwind
+             at /rustc/eeb90cda1969383f56a2637cbd3037bdf598841c/library/std/src/panicking.rs:665:5
+   1: core::panicking::panic_fmt
+             at /rustc/eeb90cda1969383f56a2637cbd3037bdf598841c/library/core/src/panicking.rs:74:14
+   2: error_handling::main
+             at ./src/main.rs:2:5
+   3: core::ops::function::FnOnce::call_once
+             at /rustc/eeb90cda1969383f56a2637cbd3037bdf598841c/library/core/src/ops/function.rs:250:5
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+```
+
 
 ## xyz_rustlings
 Exercises to do -> https://github.com/rust-lang/rustlings
