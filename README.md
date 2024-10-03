@@ -125,7 +125,7 @@ Very interesting way how to iterate over key value 'lists'
 My implementation of some excercises from https://doc.rust-lang.org/book/ch08-03-hash-maps.html#siphash
 
 ## 11_error_handling
-### error_handling
+### error_handling - unrecoverable errors
 Example of becktrace when panic occured 
 ```
 [profile.release]
@@ -151,7 +151,8 @@ stack backtrace:
              at /rustc/eeb90cda1969383f56a2637cbd3037bdf598841c/library/core/src/ops/function.rs:250:5
 note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
 ```
-
+### error_handling - recoverable errors
+Some basic implementations of recoverable errors and how to not panic
 
 ## xyz_rustlings
 Exercises to do -> https://github.com/rust-lang/rustlings
