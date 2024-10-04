@@ -154,5 +154,9 @@ note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose bac
 ### error_handling - recoverable errors
 Some basic implementations of recoverable errors and how to not panic
 
+## 12_generic_types
+Interesting into to generic types. Basically generic type is e.g. some input which can be either fload or int
+During compialtion Rust will do some magic with monomorphization -> is the process of turning generic code into specific code by filling in the concrete types that are used when compiled
+
 ## xyz_rustlings
 Exercises to do -> https://github.com/rust-lang/rustlings
