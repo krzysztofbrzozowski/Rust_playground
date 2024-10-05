@@ -164,5 +164,9 @@ Bsically traist are kind of interfaces you can use on multiple methods.
 In example we have trait called 'Summary' which can be applied on two stucts -> Tweet, NewsArticle
 Summary has a method which has to be implemented in both Tweet and NewsArticle and return some format! of few fields
 
+### lifetimes
+Heap created variables has its own life time in life scope, here if one variable is dead it can not be referenced
+(because it is invalid) -> error thrown
+
 ## xyz_rustlings
 Exercises to do -> https://github.com/rust-lang/rustlings

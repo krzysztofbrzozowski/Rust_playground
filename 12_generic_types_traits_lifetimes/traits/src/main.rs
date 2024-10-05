@@ -39,4 +39,12 @@ fn main() {
     };
 
     println!("Content for tweet {}", tweet.summarize());
+
+    // Interesting trait implementation
+    notify(&tweet);
+}
+
+// Interesting trait implementation
+pub fn notify(item: &impl Summary) {
+    println!("Breaking news! {}", item.summarize());
 }
