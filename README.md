@@ -168,5 +168,21 @@ Summary has a method which has to be implemented in both Tweet and NewsArticle a
 Heap created variables has its own life time in life scope, here if one variable is dead it can not be referenced
 (because it is invalid) -> error thrown
 
+## 13_tests
+### adder
+Very simple test example created by
+```
+cargo new adder --lib
+```
+
+Run it via
+```
+cargo test
+```
+
+## 14_io_project_grep
+### minigrep
+
+
 ## xyz_rustlings
 Exercises to do -> https://github.com/rust-lang/rustlings
