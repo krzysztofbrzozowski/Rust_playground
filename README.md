@@ -182,7 +182,9 @@ cargo test
 
 ## 14_io_project_grep
 ### minigrep
-
+```
+cargo run -- searchstring example-filename.txt
+```
 
 ## xyz_rustlings
 Exercises to do -> https://github.com/rust-lang/rustlings
